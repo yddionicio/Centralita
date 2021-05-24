@@ -96,10 +96,10 @@ namespace CentralitaHerencia
         {
             StringBuilder sb = new StringBuilder();
 
-            //sb.AppendLine("Razon Social:" + this.razonSocial);
-            //sb.AppendLine("Ganancia Total:" + this.GananciasPorTotal);
-            //sb.AppendLine("Ganancia Provincial:" + this.GananciasPorProvincial);
-            //sb.AppendLine("Ganancia Local:" + this.GananciasPorLocal);
+            sb.AppendLine("Razon Social:" + this.razonSocial);
+            sb.AppendLine("Ganancia Total:" + this.GananciasPorTotal);
+            sb.AppendLine("Ganancia Provincial:" + this.GananciasPorProvincial);
+            sb.AppendLine("Ganancia Local:" + this.GananciasPorLocal);
 
             foreach (Llamada aux in listaDeLlamadas)
             {

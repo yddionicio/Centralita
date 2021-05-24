@@ -30,22 +30,22 @@ namespace CentralTelefonica
         private void btnFacturacionTotal_Click(object sender, EventArgs e)
         {
             FrmMostrar mostrar = new FrmMostrar(this.c);
+            mostrar.TipoLlamada = Llamada.TipoLlamada.Todas;
             mostrar.ShowDialog();
-            mostrar.TipoLlamada = Llamada.TipoLlamada.Todas;       
         }
 
         private void btnFacturacionLocal_Click(object sender, EventArgs e)
         {
             FrmMostrar mostrar = new FrmMostrar(this.c);
-            mostrar.ShowDialog();
             mostrar.TipoLlamada = Llamada.TipoLlamada.Local;
+            mostrar.ShowDialog();
         }
 
         private void btnFacturacionProvincial_Click(object sender, EventArgs e)
         {
             FrmMostrar mostrar = new FrmMostrar(this.c);
-            mostrar.ShowDialog();
             mostrar.TipoLlamada = Llamada.TipoLlamada.Provincial;
+            mostrar.ShowDialog();
         }
 
         private void btnSalir_Click(object sender, EventArgs e)

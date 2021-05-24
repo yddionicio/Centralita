@@ -40,23 +40,5 @@ namespace PruebaTest
             c += l;
             c += l;
         }
-
-        //[TestMethod]
-        //[TestCase(new Provincial("cordoba", Provincial.Franja.Franja_1, 2.5f, "salta"), new Provincial("cordoba", Provincial.Franja.Franja_1, 2.5f, "salta"))]
-        //public void CompararLlamadas(object obj, object obj)
-        //{
-        //    //Arrange
-        //    Llamada p1 = new Provincial("cordoba", Provincial.Franja.Franja_1, 2.5f, "salta");
-        //    Llamada p2 = new Provincial("cordoba", Provincial.Franja.Franja_1, 2.5f, "salta");
-
-        //    Llamada l1 = new Local("cordoba", 2.3f, "salta", 10.5f);
-        //    Llamada l2 = new Local("cordoba", 2.3f, "salta", 10.5f);
-
-        //    //Act
-         
-        //    //Assert.AreEqual(l1, l2);
-        //    Assert.AreEqual(l1, p2);
-
-        //}
     }
 }

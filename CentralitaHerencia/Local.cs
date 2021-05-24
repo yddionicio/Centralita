@@ -53,7 +53,7 @@ namespace CentralitaHerencia
         }
         private float CalcularCosto()
         {
-            return base.duracion * this.costo;
+            return this.costo * base.duracion;
         }
         #endregion
     }

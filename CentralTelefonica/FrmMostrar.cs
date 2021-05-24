@@ -30,18 +30,32 @@ namespace CentralTelefonica
         }
         private void FrmMostrar_Load(object sender, EventArgs e)
         {
-            if (llamada == Llamada.TipoLlamada.Local)
+            StringBuilder sb = new StringBuilder();
+
+            sb.AppendLine("Ganancia Total:" + c.GananciasPorTotal);
+            sb.AppendLine("Ganancia Provincial:" + c.GananciasPorProvincial);
+            sb.AppendLine("Ganancia Local:" + c.GananciasPorLocal);
+
+            foreach (Llamada aux in c.Llamadas)
             {
-                richTextBox1.Text = c.ToString();
+
+                if (aux is Local && llamada == Llamada.TipoLlamada.Local)
+                {
+                    sb.AppendLine("\nDetalle de Llamada: " + aux.ToString());
+                }
+                else if (aux is Provincial && llamada == Llamada.TipoLlamada.Provincial)
+                {
+                    sb.AppendLine("\nDetalle de Llamada: " + aux.ToString());
+                }
+                else if (llamada == Llamada.TipoLlamada.Todas)
+                {
+                    sb.AppendLine("\nDetalle de Llamada: " + aux.ToString());
+                }
+
+
             }
-            else if (llamada == Llamada.TipoLlamada.Provincial)
-            {
-                richTextBox1.Text = c.ToString();
-            }
-            else
-            {
-                richTextBox1.Text = c.ToString();
-            }
+
+            richTextBox1.Text = sb.ToString();
         }
     }
 }
