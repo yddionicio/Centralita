@@ -24,19 +24,6 @@ namespace Consola
                 Console.ReadKey();
             }
 
-
-            try
-            {
-                OtraClase e = new OtraClase();
-                e.Metodo();
-            }
-            catch (MiExcepcion ex)
-            {
-                Console.WriteLine(ex.StackTrace);
-                Console.ReadKey();
-            }
-
-
         }
     }
 }
